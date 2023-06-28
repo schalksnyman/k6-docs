@@ -9,6 +9,7 @@ The `aws` module is a JavaScript library that wraps around some Amazon AWS servi
 The library exposes a couple of configuration and client classes allowing to interact with a subset of AWS services in the context of k6 load test scripts:
 - [S3Client](/javascript-api/jslib/aws/s3client): a class to list S3 buckets and the objects they contain, as well as uploading, downloading and deleting objects from them.
 - [SecretsManagerClient](/javascript-api/jslib/aws/secretsmanagerclient): a class to list, get, create, update, and delete secrets from the AWS secrets manager service.
+- [KinesisClient](/javascript-api/jslib/aws/kinesisclient): a class to manage streams, records, and shards from the AWS Kinesis service.
 - [KMSClient](/javascript-api/jslib/aws/kmsclient): a class to list and generate keys from the AWS Key Management Service.
 - [SystemsManagerClient](/javascript-api/jslib/aws/systemsmanagerclient): a class to fetch parameters from the AWS Systems Manager Service.
 - [SQSClient](/javascript-api/jslib/aws/sqsclient): a class to list and send messages to SQS queues.
@@ -34,9 +35,10 @@ This documentation is for the last version only. If you discover that some code 
 | Library                                                                | Description                                                          |
 | :--------------------------------------------------------------------- | :------------------------------------------------------------------- |
 | [AWSConfig](/javascript-api/jslib/aws/awsconfig)                       | Class to configure AWS client classes.                               |
+| [KinesisClient](/javascript-api/jslib-aws/kinesisclient)               | Client class to interact with AWS Kinesis service.                   |
 | [KMSClient](/javascript-api/jslib/aws/kmsclient)                       | Client class to interact with AWS Key Management Service.            |
 | [S3Client](/javascript-api/jslib/aws/s3client)                         | Client class to interact with AWS S3 buckets and objects.            |
 | [SecretsManager](/javascript-api/jslib/aws/secretsmanagerclient)       | Client class to interact with AWS secrets stored in Secrets Manager. |
-| [SignatureV4](/javascript-api/jslib/aws/signaturev4) | Class to sign and pre-sign requests to AWS services. |
+| [SignatureV4](/javascript-api/jslib/aws/signaturev4)                   | Class to sign and pre-sign requests to AWS services.                 |
 | [SQSClient](/javascript-api/jslib/aws/sqsclient)                       | Client class to interact with AWS Simple Queue Service.              |
 | [SystemsManagerClient](/javascript-api/jslib/aws/systemsmanagerclient) | Client class to interact with AWS Systems Manager Service.           |
